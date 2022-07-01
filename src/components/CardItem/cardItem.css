@@ -1,5 +1,6 @@
 .card-item {
     border: 2px solid rgb(178, 189, 139);
+    box-shadow: 2px 2px 4px rgb(126, 126, 126);
     border-radius: 4px;
     cursor: pointer;
 }
