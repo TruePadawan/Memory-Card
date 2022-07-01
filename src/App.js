@@ -35,53 +35,53 @@ function shuffleArray(array) {
 function App() {
   const [cardItems, setCardItems] = useState([
     {
-      alt : "Naruto",
-      src : Naruto
+      alt: "Naruto",
+      src: Naruto,
     },
     {
-      alt : "Sasuke",
-      src : Sasuke
+      alt: "Sasuke",
+      src: Sasuke,
     },
     {
-      alt : "Sakura",
-      src : Sakura
+      alt: "Sakura",
+      src: Sakura,
     },
     {
-      alt : "Gaara",
-      src : Gaara
+      alt: "Gaara",
+      src: Gaara,
     },
     {
-      alt : "Kakashi",
-      src : Kakashi
+      alt: "Kakashi",
+      src: Kakashi,
     },
     {
-      alt : "Itachi",
-      src : Itachi
+      alt: "Itachi",
+      src: Itachi,
     },
     {
-      alt : "Jiraiya",
-      src : Jiraiya
+      alt: "Jiraiya",
+      src: Jiraiya,
     },
     {
-      alt : "Tsunade",
-      src : Tsunade
+      alt: "Tsunade",
+      src: Tsunade,
     },
     {
-      alt : "Shikamaru",
-      src : Shikamaru
+      alt: "Shikamaru",
+      src: Shikamaru,
     },
     {
-      alt : "Choji",
-      src : Choji
+      alt: "Choji",
+      src: Choji,
     },
     {
-      alt : "Hinata",
-      src : Hinata
+      alt: "Hinata",
+      src: Hinata,
     },
     {
-      alt : "Ino",
-      src : Ino
-    }
+      alt: "Ino",
+      src: Ino,
+    },
   ]);
 
   const shuffleCardItems = () => {
@@ -111,4 +111,5 @@ function App() {
 }
 
 export default App;
+
 
