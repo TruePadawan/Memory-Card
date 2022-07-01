@@ -104,18 +104,6 @@ function App() {
         <Scoreboard current={0} highest={0} />
         <div className='board'>
         {jsxCardItems}
-          {/* <CardItem img={Naruto} imgAlt={"Naruto"} />
-          <CardItem img={Sasuke} imgAlt={"Sasuke"} />
-          <CardItem img={Itachi} imgAlt={"Itachi"} />
-          <CardItem img={Sakura} imgAlt={"Sakura"} />
-          <CardItem img={Ino} imgAlt={"Ino"} />
-          <CardItem img={Kakashi} imgAlt={"Kakashi"} />
-          <CardItem img={Jiraiya} imgAlt={"Jiraiya"} />
-          <CardItem img={Tsunade} imgAlt={"Tsunade"} />
-          <CardItem img={Choji} imgAlt={"Choji"} />
-          <CardItem img={Hinata} imgAlt={"Hinata"} />
-          <CardItem img={Shikamaru} imgAlt={"Shikamaru"} />
-          <CardItem img={Gaara} imgAlt={"Gaara"} /> */}
         </div>
       </main>
     </>
