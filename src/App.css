@@ -14,7 +14,27 @@ main {
 }
 
 .board {
+    max-width: 846px;
     display: grid;
-    grid-template-columns: repeat(4, max-content);
     gap: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .board {
+        grid-template-columns: repeat(auto-fit, 204px);
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .board {
+        max-width: 500px;
+        grid-template-columns: repeat(auto-fit, 150px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .board {
+        max-width: 320px;
+        grid-template-columns: repeat(auto-fit, 100px);
+    }
 }

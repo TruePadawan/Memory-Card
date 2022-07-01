@@ -80,7 +80,6 @@ function App() {
   const [gameOver, setGameOver] = useState(false);
   const [gameCleared, setGameCleared] = useState(false);
   const [currentScore, setCurrentScore] = useState(0);
-
   const clickItemsRef = useRef([]);
 
   const processClick = (cardCaption) => {
@@ -122,7 +121,7 @@ function App() {
     <>
       <Header />
       <main>
-        <span className='info-text'>Pick all individual cards with no repitition</span>
+        <span className='info-text'>Pick all cards with no repitition</span>
         <Scoreboard current={currentScore} isGameOver={gameOver} isGameCleared={gameCleared} />
         <div className='board'>
         {jsxCardItems}
