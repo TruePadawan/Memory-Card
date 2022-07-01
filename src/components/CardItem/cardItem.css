@@ -1,8 +1,10 @@
 .card-item {
-    border: 2px solid black;
+    border: 2px solid rgb(178, 189, 139);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.card-item > img {
+.card-item img {
     width: 200px;
 }
 
