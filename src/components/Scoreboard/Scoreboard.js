@@ -1,15 +1,20 @@
 import "./scoreboard.css";
 
-const Scoreboard = ({current, highest}) => {
+const Scoreboard = ({current, isGameOver, isGameCleared}) => {
+  let className = "current";
+  if (isGameOver)
+  {
+    className = "current game-over";
+  }else if (isGameCleared)
+  {
+    className = "current game-cleared";
+  }
+
     return (
       <div className="score-board">
-        <div className="current">
+        <div className={className}>
             <span className="title">Current</span>
             {current}
-        </div>
-        <div className="highest">
-            <span className="title">Highest</span>
-            {highest}
         </div>
       </div>
     );

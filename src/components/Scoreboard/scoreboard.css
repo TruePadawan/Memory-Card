@@ -17,6 +17,14 @@
     padding: 5px;
 }
 
+.current.game-over {
+    border-color: red;
+}
+
+.current.game-cleared {
+    border-color: lightgreen;
+}
+
 .score-board .title {
     font-weight: bold;
 }

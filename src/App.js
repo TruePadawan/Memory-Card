@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Header from './components/Header/Header';
 import './App.css';
 import Scoreboard from './components/Scoreboard/Scoreboard';
@@ -16,12 +16,6 @@ import Choji from "./resources/images/choji.png";
 import Hinata from "./resources/images/hinata.png";
 import Sakura from "./resources/images/sakura.png";
 import Ino from "./resources/images/ino.png";
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 function shuffleArray(array) {
   let copiedArr = [...array]
@@ -83,16 +77,44 @@ function App() {
       src: Ino,
     },
   ]);
+  const [gameOver, setGameOver] = useState(false);
+  const [gameCleared, setGameCleared] = useState(false);
+  const [currentScore, setCurrentScore] = useState(0);
 
-  const shuffleCardItems = () => {
-    setCardItems(latest => {
-      return shuffleArray(latest);
-    });
+  const clickItemsRef = useRef([]);
+
+  const processClick = (cardCaption) => {
+    // UPDATE SCORE
+    console.log(clickItemsRef.current, cardCaption)
+    let itemIndex = clickItemsRef.current.findIndex(item => item === cardCaption);
+
+    if (itemIndex !== -1)
+    {
+      setGameOver(true);
+    }
+    else {
+      clickItemsRef.current.push(cardCaption);
+
+      setCurrentScore(latest => {
+        let newScore = latest + 1;
+        if (newScore === cardItems.length)
+        {
+          setGameCleared(true);
+        }
+        return newScore;
+      });
+
+      // SHUFFLE CARD ITEMS
+      setCardItems(latest => {
+        return shuffleArray(latest);
+      });
+    }
+
   }
 
   const jsxCardItems = cardItems.map(item => {
     return (
-      <CardItem key={item.alt} img={item.src} alt={item.alt} onClick={shuffleCardItems} /> 
+      <CardItem key={item.alt} img={item.src} alt={item.alt} onClick={processClick} isGameOver={gameOver} isGameCleared={gameCleared} /> 
     );
   });
 
@@ -101,7 +123,7 @@ function App() {
       <Header />
       <main>
         <span className='info-text'>Pick all individual cards with no repitition</span>
-        <Scoreboard current={0} highest={0} />
+        <Scoreboard current={currentScore} isGameOver={gameOver} isGameCleared={gameCleared} />
         <div className='board'>
         {jsxCardItems}
         </div>
