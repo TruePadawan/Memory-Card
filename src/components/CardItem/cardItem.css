@@ -1,0 +1,12 @@
+.card-item {
+    border: 2px solid black;
+}
+
+.card-item > img {
+    width: 200px;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+}
