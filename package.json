@@ -1,6 +1,7 @@
 {
   "name": "memory-card",
   "version": "0.1.0",
+  "homepage": "https://truepadawan.github.io/Memory-Card/",
   "private": true,
   "dependencies": {
     "gh-pages": "^4.0.0",
