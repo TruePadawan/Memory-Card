@@ -84,7 +84,6 @@ function App() {
 
   const processClick = (cardCaption) => {
     // UPDATE SCORE
-    console.log(clickItemsRef.current, cardCaption)
     let itemIndex = clickItemsRef.current.findIndex(item => item === cardCaption);
 
     if (itemIndex !== -1)
@@ -117,6 +116,10 @@ function App() {
     );
   });
 
+  const restartGame = () => {
+    window.location.reload();
+  }
+  
   return (
     <>
       <Header />
@@ -126,6 +129,7 @@ function App() {
         <div className='board'>
         {jsxCardItems}
         </div>
+        <button className='reload-btn' type={"button"} onClick={restartGame}>Restart</button>
       </main>
     </>
   );
