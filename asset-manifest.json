@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.15a6bd86.css",
-    "main.js": "/static/js/main.a63383ac.js",
-    "static/media/gaara.png": "/static/media/gaara.3762abf5a0b81e775139.png",
-    "static/media/choji.png": "/static/media/choji.7b7d1afeadca715e56be.png",
-    "static/media/sakura.png": "/static/media/sakura.3fbe098f68fabf3ce038.png",
-    "static/media/ino.png": "/static/media/ino.346f0114a1bff67809dd.png",
-    "static/media/naruto.png": "/static/media/naruto.e2089f6f981df25ebaa7.png",
-    "static/media/jiraiya.png": "/static/media/jiraiya.47ed919b0a83ed6d8463.png",
-    "static/media/hinata.png": "/static/media/hinata.a1c2774ad844b13fe7d9.png",
-    "static/media/sasuke.png": "/static/media/sasuke.0a5851b672e115ea7235.png",
-    "static/media/itachi.png": "/static/media/itachi.ebad1dff117b2c662840.png",
-    "static/media/tsunade.png": "/static/media/tsunade.617d9b1ed85ef2bfd493.png",
-    "static/media/kakashi.png": "/static/media/kakashi.5eeed7e4e4e786a3ce09.png",
-    "static/media/shikamaru.png": "/static/media/shikamaru.f5860f77b9c1fa8c5e1c.png",
-    "static/media/NinjaNaruto.ttf": "/static/media/NinjaNaruto.af931b5844cec0fdf577.ttf",
-    "index.html": "/index.html",
-    "main.15a6bd86.css.map": "/static/css/main.15a6bd86.css.map",
-    "main.a63383ac.js.map": "/static/js/main.a63383ac.js.map"
+    "main.css": "/Memory-Card/static/css/main.52000f15.css",
+    "main.js": "/Memory-Card/static/js/main.f85156ce.js",
+    "static/media/gaara.png": "/Memory-Card/static/media/gaara.3762abf5a0b81e775139.png",
+    "static/media/choji.png": "/Memory-Card/static/media/choji.7b7d1afeadca715e56be.png",
+    "static/media/sakura.png": "/Memory-Card/static/media/sakura.3fbe098f68fabf3ce038.png",
+    "static/media/ino.png": "/Memory-Card/static/media/ino.346f0114a1bff67809dd.png",
+    "static/media/naruto.png": "/Memory-Card/static/media/naruto.e2089f6f981df25ebaa7.png",
+    "static/media/jiraiya.png": "/Memory-Card/static/media/jiraiya.47ed919b0a83ed6d8463.png",
+    "static/media/hinata.png": "/Memory-Card/static/media/hinata.a1c2774ad844b13fe7d9.png",
+    "static/media/sasuke.png": "/Memory-Card/static/media/sasuke.0a5851b672e115ea7235.png",
+    "static/media/itachi.png": "/Memory-Card/static/media/itachi.ebad1dff117b2c662840.png",
+    "static/media/tsunade.png": "/Memory-Card/static/media/tsunade.617d9b1ed85ef2bfd493.png",
+    "static/media/kakashi.png": "/Memory-Card/static/media/kakashi.5eeed7e4e4e786a3ce09.png",
+    "static/media/shikamaru.png": "/Memory-Card/static/media/shikamaru.f5860f77b9c1fa8c5e1c.png",
+    "static/media/NinjaNaruto.ttf": "/Memory-Card/static/media/NinjaNaruto.af931b5844cec0fdf577.ttf",
+    "index.html": "/Memory-Card/index.html",
+    "main.52000f15.css.map": "/Memory-Card/static/css/main.52000f15.css.map",
+    "main.f85156ce.js.map": "/Memory-Card/static/js/main.f85156ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.15a6bd86.css",
-    "static/js/main.a63383ac.js"
+    "static/css/main.52000f15.css",
+    "static/js/main.f85156ce.js"
   ]
 }
